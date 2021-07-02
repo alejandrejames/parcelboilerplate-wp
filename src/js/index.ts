@@ -1,9 +1,9 @@
-import navigationToggle from './components/navigationToggle';
+import forEachPolyfill from './components/forEachPolyfill';
 
 document.addEventListener(
   'DOMContentLoaded',
   () => {
-    navigationToggle()
+    forEachPolyfill()
   },
   false
 )
