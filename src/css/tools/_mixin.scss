@@ -44,22 +44,22 @@
 }
 
 @function getsp($val) {
-  $result: ($sp-width/$sp-design-width) * $val;
+  $result: calc($sp-width / $sp-design-width) * $val;
   @return $result;
 }
 @function getspS($val) {
-  $result: (320px/$sp-design-width) * $val;
+  $result: calc(320px / $sp-design-width) * $val;
   @return $result;
 }
 @function get-vw-sp($target-size) {
-  @return ($target-size / $sp-design-width) * 100 * 1vw;
+  @return calc($target-size / $sp-design-width) * 100 * 1vw;
 }
 @function get-vw($target-size) {
-  @return ($target-size / $pc-design-width) * 100 * 1vw;
+  @return calc($target-size / $pc-design-width) * 100 * 1vw;
 }
 @function get-percent($base-size, $design-width) {
-  @return ($base-size / $design-width) * 100%;
+  @return calc($base-size / $design-width) * 100%;
 }
 @function getem($base-size, $illust-lheight) {
-  @return ($illust-lheight / $base-size) * 1em;
+  @return calc($illust-lheight / $base-size) * 1em;
 }

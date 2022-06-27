@@ -11,7 +11,8 @@
     "lint:js": "eslint --ext .ts",
     "lint:style": "stylelint **/*.scss --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
-    "dev": "concurrently \"yarn:lint:style\" \"yarn:watch\" \"yarn:watch:ts\"  \"live-server ./dist/ --wait=1\" \"node replace.js\""
+    "dev": "concurrently \"yarn:lint:style\" \"yarn:watch\" \"yarn:watch:ts\"  \"live-server ./dist/ --wait=1\" \"node replace.js\"",
+    "clean": "concurrently \"rm -rf node_modules\" \"rm -rf .cache\" \"rm -rf dist\"  \"rm -rf yarn.lock\""
   },
   "keywords": [],
   "author": "",
